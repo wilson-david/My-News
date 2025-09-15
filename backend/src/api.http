@@ -1,1 +1,1 @@
-GET https://newsapi.org/v2/top-headlines?country=us&apiKey=608a878531bd4dc88776c92a6762506f
+GET https://newsapi.org/v2/top-headlines?apiKey=608a878531bd4dc88776c92a6762506f&country=jp

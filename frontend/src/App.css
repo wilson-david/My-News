@@ -159,3 +159,45 @@ img {
   height: auto;
   display: block;
 }
+
+/* src/App.css */
+
+/* Contenedor de los selects en fila */
+.filtros-fila {
+  display: flex;
+  gap: 1rem; /* Espacio entre los selects */
+  align-items: flex-end; /* Alinea los labels y selects por la parte inferior */
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* En móvil, se apilan uno encima del otro */
+}
+
+/* Cada item (label + select) */
+.filtro-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 180px; /* Ancho mínimo para que no se vean demasiado pequeños */
+}
+
+.filtro-item label {
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.filtro-item select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Responsive: en pantallas pequeñas, apila los selects */
+@media (max-width: 768px) {
+  .filtros-fila {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
