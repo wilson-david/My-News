@@ -16,7 +16,7 @@ function App() {
       {/* Sidebar - Menú lateral (sin cambios) */}
       <aside className="sidebar">
         <div className="logo-section">
-          <h1>🗞️ Mi Periódico</h1>
+          <h1>🗞️ Mis Noticas</h1>
         </div>
         <nav>
           <ul>
@@ -25,25 +25,25 @@ function App() {
                 className={activeSection === 'home' ? 'active' : ''}
                 onClick={() => setActiveSection('home')}
               >
-                🏠 Portada
+                Top Headlin
               </button>
             </li>
-            <li>
+            {/* <li>
               <button
                 className={activeSection === 'sports' ? 'active' : ''}
                 onClick={() => setActiveSection('sports')}
               >
                 ⚽ Deportes
               </button>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <button
                 className={activeSection === 'tech' ? 'active' : ''}
                 onClick={() => setActiveSection('tech')}
               >
                 💻 Tecnología
               </button>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </aside>
